@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="337dp"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="ConstraintLayout is available in an API library that's compatible with Android 2.3 (API level 9) and higher. This page provides a guide to building a layout with ConstraintLayout in Android Studio 3.0 or higher. If you'd like more information about the Layout Editor itself, see the Android Studio guide to Build a UI with Layout Editor.  To see a variety of layouts you can create with ConstraintLayout, check out the Constraint Layout Examples project on GitHub.  Constraints overview"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+        tools:layout_editor_absoluteX="62dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="136dp" />
+</android.support.constraint.ConstraintLayout>
