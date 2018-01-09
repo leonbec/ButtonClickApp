@@ -8,6 +8,7 @@ import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
 
 private const val TAG = "MainActivity"
+private const val TEXT_CONTENT = "text content"
 
 class MainActivity : AppCompatActivity() {
 
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
     override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
         Log.d(TAG, "onRestoreInstanceState")
         super.onRestoreInstanceState(savedInstanceState)
+        textView.text = savedInstanceState?.getString(TEXT_CONTENT, "")
     }
 
     override fun onResume() {
@@ -51,6 +53,7 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle?) {
         Log.d(TAG, "onSaveInstanceState")
         super.onSaveInstanceState(outState)
+        outState?.putString(TEXT_CONTENT, textView.text.toString())
     }
 
     override fun onStop() {
